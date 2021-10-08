@@ -13,7 +13,7 @@ export class EvaluationFormComponent implements OnInit {
 
   public eval: Eval = {
     evaluateur:"",
-    commentaire"",
+    commentaire:"",
     etoiles = 0
   }
 
