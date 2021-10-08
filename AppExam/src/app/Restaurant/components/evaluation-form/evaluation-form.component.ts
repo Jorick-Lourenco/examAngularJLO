@@ -14,7 +14,7 @@ export class EvaluationFormComponent implements OnInit {
   public eval: Eval = {
     evaluateur:"",
     commentaire:"",
-    etoiles = 0
+    etoiles: 0
   }
 
   constructor() { }
@@ -26,8 +26,8 @@ export class EvaluationFormComponent implements OnInit {
       this.evaluationAdded.emit(this.evaluation);
       this.restaurant = {
         evaluateur:"",
-        commentaire"",
-        etoiles = 0
+        commentaire:"",
+        etoiles: 0
       }
     }
   }
