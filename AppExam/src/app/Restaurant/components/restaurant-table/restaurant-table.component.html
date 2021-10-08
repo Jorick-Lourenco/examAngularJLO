@@ -1,0 +1,27 @@
+<h2>Liste des restaurants</h2>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Nom</th>
+    <th>Adresse</th>
+    <th>Etoiles</th>
+    <th>Evaluation</th>
+
+  </tr>
+  <tr *ngFor="let restaurant of restaurants">
+    <td>{{restaurant.id}}</td>
+    <td>{{restaurant.nom}}</td>
+    <td>{{restaurant.adresse}}</td>
+    <button><a routerLink="/detail">Détails</a></button>
+    <td><ul>
+      <li *ngFor="let eval of restaurant.evaluations">
+        <ul>
+          <li>Evaluateur : {{eval.evaluateur}}</li>
+          <li>Commentaire : {{eval.commentaire}}</li>
+          <li>Etoiles : {{eval.etoiles}}</li>
+        </ul>
+      </li>
+    </ul></td>
+  </tr>
+</table>
+
